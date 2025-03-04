@@ -1,9 +1,22 @@
-// TOÁN TỬ SO SÁNH - P2
-
-// ===
-// !==
+/*
+    0
+    ''
+    null
+    undefined
+    NaN
+    false
+*/
 
 var a = 1;
-var b = '1';
+var b = 2;
 
-console.log(a !== b); // true
+var result = null || '' || undefined || 0;
+
+console.log(result);
+if (result) {
+    console.log('Dieu kien dung');
+}
+
+else {
+    console.log('Dieu kien sai');
+}    

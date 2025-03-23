@@ -1,23 +1,21 @@
-// CHUỖI TRONG JAVASCRIPT
+// Làm việc với Array
 
-// 1. Tạo chuỗi
-//     - Các cách tạo chuỗi
-//     - Nên dùng cách nào? Lý do?
-//     - Kiểm tra data type
-// 2. Một số case sử dụng backslash (\)
-// 3. Xem độ dài chuỗi
-// 4. Chú ý độ dài khi viết code
-// 5. Template string ES6
+// 1. To String
+// 2. Join
+// 3. Pop
+// 4. Push
+// 5. Shift
+// 6. Unshift
+// 7. Splicing
+// 8. Concat
+// 9. Slicing
 
-var fullName = 'Quoc An'
+var languages = [
+    'Javascript',
+    'Java',
+    'PHP',
+];
 
-console.log(fullName.length);
-
-var firstName = 'Son'
-var lastName = 'Dang'
-
-console.log(`Toi la: ${firstName} ${lastName}`);
-
-
+console.log(languages.slice(-2, -1));
 
 

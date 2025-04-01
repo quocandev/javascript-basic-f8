@@ -1,23 +1,20 @@
-// CHUỖI TRONG JAVASCRIPT
+//object constructor
 
-// 1. Tạo chuỗi
-//     - Các cách tạo chuỗi
-//     - Nên dùng cách nào? Lý do?
-//     - Kiểm tra data type
-// 2. Một số case sử dụng backslash (\)
-// 3. Xem độ dài chuỗi
-// 4. Chú ý độ dài khi viết code
-// 5. Template string ES6
+function User(firstName, lastName, avatar) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.avatar = avatar;
 
-var fullName = 'Quoc An'
+    this.getName = function () {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
 
-console.log(fullName.length);
+var author = new User('Do', 'Quoc An', 'Avatar');
+var user = new User('Vu', 'Nguyen', 'Avatar');
 
-var firstName = 'Son'
-var lastName = 'Dang'
+author.title = 'Chia sẻ dạo tại F8'
+user.conment = 'Hay quá, cảm ơn bạn đã chia sẻ';
 
-console.log(`Toi la: ${firstName} ${lastName}`);
-
-
-
-
+console.log(author.getName());
+console.log(user.getName());

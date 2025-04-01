@@ -9,7 +9,7 @@ var myInfo = {
     [emailKey]: 'doquocan1601@gmail.com',
     getName: function () {
         return this.name;
-    }
+    },
 };
 
 // Function ---> Phương thức
